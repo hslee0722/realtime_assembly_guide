@@ -41,7 +41,6 @@
 - **Image Processing**: OpenCV
 - **Deep Learning**: PyTorch, Torchvision
 - **Environment**: Windows 11
-- **Optional Deployment Target**: Raspberry Pi 5
 
 ## 시스템 개요
 
@@ -91,6 +90,14 @@ Top-1 Accuracy: 95.37%
 (3개 모델 평균 기준)
 
 위 수치는 Foosball 중심 데이터셋 및 실험 환경 기준입니다.
+
+## 트러블슈팅 및 성능 최적화 (Troubleshooting)
+
+- **이슈:** 단일 부품 위주로 학습된 초기 모델이 실제 복합 조립 환경(부품이 겹치거나 가려지는 상황)에서 인식률(Confidence Score)이 저하되고 오탐지하는 현상 발생.
+- **해결 방안:** 1. 빈 작업 환경을 Default 클래스로 별도 학습하여 오탐지 방지.
+  2. 미완성 상태와 완성 상태 이미지를 직접 라벨링 및 전처리하여 데이터셋 고도화.
+  3. 프레임 스킵 로직을 적용하여 실시간 추론 시 연산 부하 최소화.
+- **결과:** 실제 조립 환경에서의 객체 인식 안정성을 대폭 확보하고, AI 모델의 한계를 데이터 품질 개선으로 극복하였습니다.
 
 ## 프로젝트 구조
 
