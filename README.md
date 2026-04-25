@@ -16,6 +16,12 @@
 
 이 프로젝트는 DIY 조립물, 3D 프린팅 조립품, 교육용 키트, 가구 조립 등 다양한 B2C 조립 시나리오로 확장할 수 있습니다.
 
+## 간단 시연 영상
+
+**Youtube Link**: [Watch on YouTube](https://youtu.be/sAVkPxLrHNo)
+
+**Demo Video**: <img width="800" height="512" alt="demo_video" src="https://github.com/user-attachments/assets/5067cc5d-ddf9-4f12-b74d-a83ca86ba3d0" />
+
 ## 핵심 기능
 
 - 실시간 카메라 기반 조립 상태 인식
@@ -41,8 +47,9 @@
 ![YOLO11](https://img.shields.io/badge/YOLO11-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
 - **GUI**: PyQt5
 ![PyQt5](https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white)
-- **Image Processing**: OpenCV
+- **Labeling Tool**: labelImg
 ![labelImg](https://img.shields.io/badge/labelImg-FF4B4B?style=for-the-badge)
+- **Image Processing**: OpenCV
 - **Deep Learning**: PyTorch, Torchvision
 - **Environment**: Windows 11
 
