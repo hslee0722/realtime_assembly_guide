@@ -105,7 +105,7 @@
 <img  width="600" alt="그림3" src="https://github.com/user-attachments/assets/bec4a407-452a-42db-800e-707615aff508" />
 
  
-4. **복합 학습**: 복합 환경 데이터를 추가 투입하여 모델을 파인튜닝하고, 다양한 엣지 케이스에 대응하는 강건성(Robustness) 확보
+4. **복합 학습**: 복합 환경 데이터를 추가 투입하여 모델을 파인튜닝
 <img  width="600" alt="그림4" src="https://github.com/user-attachments/assets/52d7928d-263a-45f5-bc6a-4ad6eeb06be2" />
 
 
