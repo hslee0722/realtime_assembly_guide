@@ -1,7 +1,18 @@
-# Realtime Assembly Guide
+# 🛠️ Realtime Assembly Guide (Vision-based)
 
-비전 인식 기반 실시간 조립 가이드 시스템입니다.  
-상부 고정 카메라가 작업 공간을 관찰하고, YOLO 기반 부품 검출 모델과 조립 단계 분류 모델이 현재 상태를 판단하여, 사용자가 종이 설명서를 직접 넘기지 않아도 적절한 가이드를 실시간으로 제공합니다.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![YOLO11](https://img.shields.io/badge/YOLO11-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
+![PyQt5](https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white)
+
+> **비전 인식 기반 실시간 조립 가이드 시스템** > 작업 공간을 관찰하는 상부 고정 카메라와 YOLO 기반 AI 모델을 결합하여, 사용자가 종이 설명서 없이도 현재 조립 단계에 맞는 가이드를 실시간으로 제공받을 수 있는 스마트 자동화 솔루션입니다.
+
+## 시연 영상
+
+**Demo Video**: [Watch on YouTube](https://youtu.be/sAVkPxLrHNo)
+
+<div align="center">
+  <img width="800" alt="demo_video" src="https://github.com/user-attachments/assets/5067cc5d-ddf9-4f12-b74d-a83ca86ba3d0" />
+</div>
 
 ## 프로젝트 설명
 
@@ -15,12 +26,6 @@
 5. 조건이 충족 시 자동으로 다음 단계 이동함
 
 이 프로젝트는 DIY 조립물, 3D 프린팅 조립품, 교육용 키트, 가구 조립 등 다양한 B2C 조립 시나리오로 확장할 수 있습니다.
-
-## 간단 시연 영상
-
-**Youtube Link**: [Watch on YouTube](https://youtu.be/sAVkPxLrHNo)
-
-**Demo Video**: <img width="800" height="512" alt="demo_video" src="https://github.com/user-attachments/assets/5067cc5d-ddf9-4f12-b74d-a83ca86ba3d0" />
 
 ## 핵심 기능
 
@@ -54,6 +59,23 @@
 - **Environment**: Windows 11
 
 ## 시스템 개요
+
+
+전체 시스템은 독립적이고 유기적인 계층형 아키텍처로 설계되었습니다.
+
+```mermaid
+graph TD
+    A[카메라 입력\n상부 고정] --> B[전처리 계층\n프레임 캡처 / 보정]
+    B --> C[인식 계층 1\nYOLO Detect]
+    C --> D[인식 계층 2\nYOLO Classify]
+    D --> E[판단 계층\n게이팅 / 신뢰도 검증]
+    E --> F[안내 계층\nPyQt5 UI / 피드백]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#bbf,stroke:#333,stroke-width:2px
+    style D fill:#bbf,stroke:#333,stroke-width:2px
+    style F fill:#bfb,stroke:#333,stroke-width:2px
+```
 
 본 시스템은 다음 계층으로 구성됩니다.
 
@@ -109,6 +131,24 @@ Top-1 Accuracy: 95.37%
   2. 미완성 상태와 완성 상태 이미지를 직접 라벨링 및 전처리하여 데이터셋 고도화.
   3. 프레임 스킵 로직을 적용하여 실시간 추론 시 연산 부하 최소화.
 - **결과:** 실제 조립 환경에서의 객체 인식 안정성을 대폭 확보하고, AI 모델의 한계를 데이터 품질 개선으로 극복하였습니다.
+
+## 설치 및 실행 가이드
+
+# 1. Clone the repository
+git clone [https://github.com/Tran9523/Realtime_Assembly_Guide.git](https://github.com/Tran9523/Realtime_Assembly_Guide.git)
+cd Realtime_Assembly_Guide
+
+# 2. Run the UI Application
+cd app
+python Realtime_Assembly_Guide.py
+
+# 3-1. If you want to make sample of Detect Models
+cd ../train
+python prepare_dataset.py
+python train_yolo_cls.py
+
+# 3-2. Make sample of Classfiy Models
+python train_yolo_all.py
 
 ## 프로젝트 구조
 
