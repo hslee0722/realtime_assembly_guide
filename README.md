@@ -36,16 +36,15 @@
 ## 기술 스택
 
 - **Language**: Python 3.10
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 - **Vision**: Ultralytics YOLO11n / YOLO11n-cls
+![YOLO11](https://img.shields.io/badge/YOLO11-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
 - **GUI**: PyQt5
+![PyQt5](https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 - **Image Processing**: OpenCV
+![labelImg](https://img.shields.io/badge/labelImg-FF4B4B?style=for-the-badge)
 - **Deep Learning**: PyTorch, Torchvision
 - **Environment**: Windows 11
-![YOLO11](https://img.shields.io/badge/YOLO11-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
-![PyQt5](https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![labelImg](https://img.shields.io/badge/labelImg-FF4B4B?style=for-the-badge)
 
 ## 시스템 개요
 
