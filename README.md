@@ -47,13 +47,9 @@
 ## 기술 스택
 
 - **Language**: Python 3.10
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 - **Vision**: Ultralytics YOLO11n / YOLO11n-cls
-![YOLO11](https://img.shields.io/badge/YOLO11-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
 - **GUI**: PyQt5
-![PyQt5](https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 - **Labeling Tool**: labelImg
-![labelImg](https://img.shields.io/badge/labelImg-FF4B4B?style=for-the-badge)
 - **Image Processing**: OpenCV
 - **Deep Learning**: PyTorch, Torchvision
 - **Environment**: Windows 11
@@ -98,19 +94,19 @@
 현장 적용이 가능한 수준의 견고한 AI 모델을 구축하기 위해, 점진적인 데이터 학습 파이프라인을 설계했습니다.
 
 1. **단일 부품 데이터 구축**: 각 부품의 특징을 독립적으로 파악하기 위한 기초 데이터 수집
-<img width="800" height="800" alt="그림1" src="https://github.com/user-attachments/assets/df742431-25a0-4264-ba6b-e4c65d647174" />
+<img width="600" alt="그림1" src="https://github.com/user-attachments/assets/df742431-25a0-4264-ba6b-e4c65d647174" />
 
  
 2. **단일 학습**: 개별 부품에 대한 베이스라인 Detection 모델 훈련
-<img  width="800" height="800" alt="그림2" src="https://github.com/user-attachments/assets/c1b6ea1a-cc6d-47e0-8efd-8588d4a8ab0d" />
+<img  width="600" alt="그림2" src="https://github.com/user-attachments/assets/c1b6ea1a-cc6d-47e0-8efd-8588d4a8ab0d" />
 
    
 3. **복합 부품 환경 구성**: 부품 겹침, 손에 의한 가려짐 등 실제 조립 시 발생하는 복잡한 작업 공간(Workspace) 모사
-<img  width="800" height="800" alt="그림3" src="https://github.com/user-attachments/assets/bec4a407-452a-42db-800e-707615aff508" />
+<img  width="600" alt="그림3" src="https://github.com/user-attachments/assets/bec4a407-452a-42db-800e-707615aff508" />
 
  
 4. **복합 학습**: 복합 환경 데이터를 추가 투입하여 모델을 파인튜닝하고, 다양한 엣지 케이스에 대응하는 강건성(Robustness) 확보
-<img  width="800" height="800" alt="그림4" src="https://github.com/user-attachments/assets/52d7928d-263a-45f5-bc6a-4ad6eeb06be2" />
+<img  width="600" alt="그림4" src="https://github.com/user-attachments/assets/52d7928d-263a-45f5-bc6a-4ad6eeb06be2" />
 
 
 ## 성능 요약
